@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>I Miei Progetti - Rapporti PDF</title>
+    <title>Mes Projets - Rapports PDF</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -19,7 +19,7 @@
         header {
             text-align: center;
             padding: 40px 20px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #000080 0%, #1a237e 100%);
             color: white;
             border-radius: 10px;
             margin-bottom: 30px;
@@ -52,7 +52,7 @@
         }
         .project-title {
             font-size: 1.5em;
-            color: #764ba2;
+            color: #000080;
             margin-bottom: 10px;
         }
         .project-description {
@@ -62,7 +62,7 @@
         }
         .pdf-link {
             display: inline-block;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #000080 0%, #1a237e 100%);
             color: white;
             text-decoration: none;
             padding: 10px 20px;
@@ -92,57 +92,64 @@
             padding: 20px;
             color: #666;
         }
+        footer a {
+            color: #000080;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>📁 I Miei Progetti</h1>
-            <p class="subtitle">Rapporti completi e documentazione</p>
+            <h1>📁 Mes Projets</h1>
+            <p class="subtitle">Rapports complets et documentation</p>
         </header>
 
-        <!-- Sezione progetti -->
+        <!-- Section projets -->
         <div class="projects-grid">
             <div class="project-card">
-                <div class="project-title">Intersection-based Indicators for Diagnostics of TPG’s Network</div>
+                <div class="project-title">Indicateurs basés sur les intersections pour le diagnostic du réseau des TPG</div>
                 <div class="project-description">
-                    <p>Questo lavoro fa parte di un progetto più ampio condotto dall’azienda di trasporti pubblici di Ginevra, TPG, che mira a definire un modello per individuare i punti e le cause che rallentano il trasporto pubblico. Nello specifico, in questo progetto sono stati utilizzati dati AVL (Automated Vehicle Location) e le informazioni relative al segnale trasmesso dai semafori, per definire una serie di indicatori di prestazione che consentano di analizzare gli incroci, e più specificatamente i semafori, al fine di individuare quelli più critici. In un primo momento mi sono immerso nel dataset con l’obbiettivo di capire come poter utilizzare i dati grezzi forniti dalle TPG, i quali non sono stati raccolti per questo scopo e permettono solo di approssimare le intersezioni. In seguito, ho definito quattro indicatori basati sulla velocità ed il tempo di attraversamento dell’intersezione, i quali hanno permesso di analizzare i semafori e di identificare alcune delle possibili cause principali del rallentamento del trasporto pubblico. L’approccio per analizzare le intersezioni in questo progetto si distingue da quello più tradizionale, in particolare perché ha l’obbiettivo di indentificare le cause dei problemi piuttosto che trovare soluzioni più efficienti. Questo approccio mi ha permesso di pensare a come definire da zero alcuni degli indicatori e provare a interpretare il significato dell’output.</p>
-                    <p><strong>Periodo:</strong> Autunno 2025</p>
+                    <p>Ce travail fait partie d'un projet plus vaste mené par l'entreprise de transports publics de Genève, les TPG, qui vise à définir un modèle pour identifier les points et les causes qui ralentissent les transports publics. Plus spécifiquement, dans ce projet, des données AVL (Automated Vehicle Location) et les informations relatives aux signaux transmis par les feux de circulation ont été utilisées pour définir une série d'indicateurs de performance permettant d'analyser les intersections, et plus particulièrement les feux de circulation, afin d'identifier les plus critiques. Dans un premier temps, je me suis plongé dans l'ensemble de données dans le but de comprendre comment utiliser les données brutes fournies par les TPG, qui n'ont pas été collectées à cette fin et ne permettent que d'approximer les intersections. Ensuite, j'ai défini quatre indicateurs basés sur la vitesse et le temps de traversée de l'intersection, qui ont permis d'analyser les feux de circulation et d'identifier certaines des principales causes possibles du ralentissement des transports publics. L'approche pour analyser les intersections dans ce projet se distingue de l'approche plus traditionnelle, notamment parce qu'elle vise à identifier les causes des problèmes plutôt qu'à trouver des solutions plus efficaces. Cette approche m'a permis de réfléchir à la manière de définir certains indicateurs à partir de zéro et d'essayer d'interpréter la signification des résultats.</p>
+                    <p><strong>Période:</strong> Automne 2025</p>
                 </div>
-                <a href="final_report_luca.pdf" target="_blank" class="pdf-link">📄 Visualizza Rapporto PDF</a>
+                <a href="final_report_luca.pdf" target="_blank" class="pdf-link">📄 Voir le Rapport PDF</a>
             </div>
 
             <div class="project-card">
-                <div class="project-title">Analyse descriptive de l’influence d’Airbnb dans l’agglomération de Lugano</div>
+                <div class="project-title">Analyse descriptive de l'influence d'Airbnb dans l'agglomération de Lugano</div>
                 <div class="project-description">
-                    <p>Breve descrizione del progetto: obiettivi, tecnologie utilizzate e risultati principali.</p>
-                    <p><strong>Periodo:</strong> Autunno 2025</p>
+                    <p>Brève description du projet : objectifs, technologies utilisées et principaux résultats.</p>
+                    <p><strong>Période:</strong> Automne 2025</p>
                 </div>
-                <a href="raport_final_LiuzziL.pdf" target="_blank" class="pdf-link">📄 Visualizza Rapporto PDF</a>
+                <a href="raport_final_LiuzziL.pdf" target="_blank" class="pdf-link">📄 Voir le Rapport PDF</a>
             </div>
+            
             <div class="project-card">
-                <div class="project-title">Applying Traffic Assignement to a railway network</div>
+                <div class="project-title">Application de l'affectation du trafic à un réseau ferroviaire</div>
                 <div class="project-description">
-                    <p>Questo lavoro fa part.</p>
-                    <p><strong>Periodo:</strong> Primavera 2025</p>
+                    <p>Ce travail fait partie...</p>
+                    <p><strong>Période:</strong> Printemps 2025</p>
                 </div>
-                <a href="final_report_TNMA.pdf" target="_blank" class="pdf-link">📄 Visualizza Rapporto PDF</a>
+                <a href="final_report_TNMA.pdf" target="_blank" class="pdf-link">📄 Voir le Rapport PDF</a>
             </div>
 
             <div class="project-card">
-                <div class="project-title">Development of a framework for comparing ride-hailing services in a microscopic traffic simulator</div>
+                <div class="project-title">Développement d'un framework pour comparer les services de VTC dans un simulateur de trafic microscopique</div>
                 <div class="project-description">
-                    <p>Breve descrizione del progetto: obiettivi, tecnologie utilizzate e risultati principali.</p>
-                    <p><strong>Periodo:</strong> Primavera 2024</p>
+                    <p>Brève description du projet : objectifs, technologies utilisées et principaux résultats.</p>
+                    <p><strong>Période:</strong> Printemps 2024</p>
                 </div>
-                <a href="Final_report_Bachelor_project.pdf" target="_blank" class="pdf-link">📄 Visualizza Rapporto PDF</a>
+                <a href="Final_report_Bachelor_project.pdf" target="_blank" class="pdf-link">📄 Voir le Rapport PDF</a>
             </div>
         </div>
 
-
         <footer>
-            <p>© 2024 Luca Liuzzi - I rapporti sono disponibili per la visualizzazione</p>
-            <p>🔗 GitHub: <a href="https://github.com/liuzzi29" style="color: #667eea;">github.com/liuzzi29</a></p>
+            <p>© 2024 Luca Liuzzi - Les rapports sont disponibles pour consultation</p>
+            <p>🔗 GitHub: <a href="https://github.com/liuzzi29">github.com/liuzzi29</a></p>
         </footer>
     </div>
 </body>
