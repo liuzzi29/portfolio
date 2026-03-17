@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mes Projets - Rapports PDF</title>
+    <title>Projets - Rapports PDF</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -55,10 +55,51 @@
             color: #000080;
             margin-bottom: 10px;
         }
-        .project-description {
+        .project-info {
             color: #666;
             margin-bottom: 15px;
             line-height: 1.6;
+        }
+        .info-item {
+            margin-bottom: 5px;
+        }
+        .info-label {
+            font-weight: 600;
+            color: #444;
+        }
+        .description {
+            margin-top: 15px;
+            margin-bottom: 15px;
+            padding-top: 10px;
+            border-top: 1px solid #e0e0e0;
+        }
+        .description-preview {
+            color: #666;
+            line-height: 1.6;
+        }
+        .description-full {
+            display: none;
+            margin-top: 10px;
+            color: #666;
+            line-height: 1.6;
+        }
+        .description-full.show {
+            display: block;
+        }
+        .read-more-btn {
+            background: none;
+            border: 1px solid #000080;
+            color: #000080;
+            padding: 5px 15px;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 0.9em;
+            margin-top: 8px;
+            transition: all 0.3s ease;
+        }
+        .read-more-btn:hover {
+            background: #000080;
+            color: white;
         }
         .pdf-link {
             display: inline-block;
@@ -69,6 +110,7 @@
             border-radius: 5px;
             font-weight: 500;
             transition: opacity 0.3s ease;
+            margin-top: 10px;
         }
         .pdf-link:hover {
             opacity: 0.9;
@@ -112,47 +154,125 @@
         <div class="projects-grid">
             <div class="project-card">
                 <div class="project-title">Indicateurs basés sur les intersections pour le diagnostic du réseau des TPG</div>
-                <div class="project-description">
-                    <p> </p>
-                    <p><strong>Type:</strong>Projet de semestre individuel (8 ECTS)</p>
-                    <p><strong>Lab:</strong> HOMES Lab & TPG (Collaboration)</p>
-                    <p><strong>Supervision:</strong> Prof. Kenan Zhang et Dr. Cloe Cortes Balcells</p>
-                    <p><strong>Période:</strong> MA3, Automne 2025</p>
+                <div class="project-info">
+                    <div class="info-item"><span class="info-label">Type:</span> Projet de semestre individuel (8 ECTS)</div>
+                    <div class="info-item"><span class="info-label">Cours/Lab:</span> HOMES Lab & TPG (Collaboration)</div>
+                    <div class="info-item"><span class="info-label">Supervision:</span> Prof. Kenan Zhang et Dr. Cloe Cortes Balcells</div>
+                    <div class="info-item"><span class="info-label">Période:</span> MA3, Automne 2025</div>
                 </div>
-                <a href="final_report_luca.pdf" target="_blank" class="pdf-link">📄 Voir le Rapport PDF</a>
+                
+                <div class="description">
+                    <div class="description-preview">
+                        <strong>Description:</strong> Ce travail fait partie d’un projet plus vaste mené par l’entreprise de transports publics de Genève, TPG, qui vise à définir un modèle pour identifier les points et les causes qui ralentissent les transports publics. 
+                    <div class="description-full">
+                        <strong>Description complète:</strong> Ce travail fait partie d’un projet plus vaste mené par l’entreprise de transports publics de Genève,
+TPG, qui vise à définir un modèle pour identifier les points et les causes qui ralentissent les transports
+publics. Plus spécifiquement, dans ce projet, des données AVL (Automated Vehicle Location) et les
+informations relatives au signal transmis par les feux de circulation ont été utilisées pour définir une
+série d’indicateurs de performance permettant d’analyser les intersections, et plus particulièrement
+les feux, afin d’identifier ceux qui sont les plus critiques. Dans un premier temps, il a été nécessaire
+d’approfondir la structure et les informations de l’ensemble de données dans le but de comprendre
+comment utiliser les données brutes fournies par les TPG, lesquelles n’ont pas été collectées à cette fin
+et ne permettent que d’approximer les intersections. Ensuite, quatre indicateurs basés sur la vitesse
+et le temps de traversée de l’intersection ont été définis, ce qui a permis d’analyser les feux de circula-
+tion et d’identifier certaines des causes principales possibles du ralentissement des transports publics.
+L’approche pour analyser les intersections dans ce projet se distingue de l’approche plus traditionnelle,
+en particulier parce qu’elle a pour objectif d’identifier les causes des problèmes plutôt que de trouver
+des solutions plus efficaces. Cette approche a permis de réfléchir à la manière de définir certains indi-
+cateurs à partir de zéro et d’essayer d’interpréter la signification de la sortie.
+                    </div>
+                    <button class="read-more-btn" onclick="toggleDescription(this)">Lire la suite</button>
+                </div>
+                
+                <a href="final_report_luca.pdf" target="_blank" class="pdf-link">Voir le Rapport PDF</a>
             </div>
 
             <div class="project-card">
                 <div class="project-title">Analyse descriptive de l'influence d'Airbnb dans l'agglomération de Lugano</div>
-                <div class="project-description">
-                    <p><strong>Type:</strong>Projet ENAC, individuel (4 ECTS)</p>
-                    <p><strong>Lab:</strong> URBDEMO</p>
-                    <p><strong>Supervision:</strong> Prof. Mathias Lerch et Wenxiu Du</p>
-                    <p><strong>Période:</strong> MA3, Automne 2025</p>
+                <div class="project-info">
+                    <div class="info-item"><span class="info-label">Type:</span> Projet ENAC, individuel (4 ECTS)</div>
+                    <div class="info-item"><span class="info-label">Cours/Lab:</span> URBDEMO</div>
+                    <div class="info-item"><span class="info-label">Supervision:</span> Prof. Mathias Lerch et Wenxiu Du</div>
+                    <div class="info-item"><span class="info-label">Période:</span> MA3, Automne 2025</div>
                 </div>
-                <a href="raport_final_LiuzziL.pdf" target="_blank" class="pdf-link">📄 Voir le Rapport PDF</a>
+                
+                <div class="description">
+                    <div class="description-preview">
+                        <strong>Description:</strong> Cette étude combine des données provenant de la plateforme Airbnb, des données démographiques et géographiques pour décrire et analyser l'impact d'Airbnb sur l'agglomération de Lugano. Grâce à une analyse tripartite,
+                    <div class="description-full">
+                        <strong>Description complète:</strong> Cette étude combine des données provenant de la plateforme Airbnb, des données démographiques et géographiques pour décrire et analyser l'impact d'Airbnb sur l'agglomération de Lugano. Grâce à une analyse tripartite, nous avons analysé comment la diffusion de la plateforme a évolué dans le temps, décrit la situation actuelle à l'aide de cartes et d'analyses de corrélation, et déterminé les facteurs les plus influents pour la présence d'appartements à court terme. Bien que cette étude présente des limites méthodologiques, elle a permis d'approfondir un problème non encore abordé à Lugano et de faire émerger certains aspects intéressants.
+Ce projet se situe en dehors du contexte des études sur la mobilité ; cependant, il a été très intéressant car, dans un premier temps, il a été nécessaire de collecter et de traiter les données, provenant de sources différentes, afin de pouvoir les analyser, puis il a permis d'explorer de nouveaux domaines liés aux systèmes urbains. J'ai personnellement proposé le projet au professeur qui a accepté ma proposition et fourni le soutien nécessaire pour commencer la recherche. Outre la recherche du thème et de la problématique du projet, je me suis chargé de la collecte des données nécessaires, obtenues à partir de différentes sources.
+                    </div>
+                    <button class="read-more-btn" onclick="toggleDescription(this)">Lire la suite</button>
+                </div>
+                
+                <a href="raport_final_LiuzziL.pdf" target="_blank" class="pdf-link">Voir le Rapport PDF</a>
             </div>
             
             <div class="project-card">
                 <div class="project-title">Application de l'affectation du trafic à un réseau ferroviaire</div>
-                <div class="project-description">
-                    <p><strong>Type:</strong>Projet dans le cadre d'un cours, réalisé avec Fletcher Collis</p>
-                    <p><strong>Lab:</strong> CIVIL – 477, Transportation network modelling \& analysis</p>
-                    <p><strong>Supervision:</strong> Prof. Kenan Zhang </p>
-                    <p><strong>Période:</strong> MA2, Printemps 2025</p>
+                <div class="project-info">
+                    <div class="info-item"><span class="info-label">Type:</span> Projet dans le cadre d'un cours, réalisé avec Fletcher Collis</div>
+                    <div class="info-item"><span class="info-label">Cours/Lab:</span> CIVIL – 477, Transportation network modelling & analysis</div>
+                    <div class="info-item"><span class="info-label">Supervision:</span> Prof. Kenan Zhang</div>
+                    <div class="info-item"><span class="info-label">Période:</span> MA2, Printemps 2025</div>
                 </div>
-                <a href="final_report_TNMA.pdf" target="_blank" class="pdf-link">📄 Voir le Rapport PDF</a>
+                
+                <div class="description">
+                    <div class="description-preview">
+                        <strong>Description:</strong> Ae projet fait partie de l’évaluation du cours "Transportation network modeling & analysis" (3
+ECTS) et a pour objectif d’appliquer le processus d’affectation du trafic dans un contexte différent de
+celui du trafic routier. Dans ce contexte
+                    </div>
+                    <div class="description-full">
+                        <strong>Description complète:</strong> Ce projet fait partie de l’évaluation du cours "Transportation network modeling & analysis" (3
+ECTS) et a pour objectif d’appliquer le processus d’affectation du trafic dans un contexte différent de
+celui du trafic routier. Dans ce contexte, l’affectation du trafic a été appliquée au réseau ferroviaire des
+trains grandes lignes des CFF. Ce projet est structuré en deux parties ; une première dans laquelle le
+réseau et la demande de passagers ont été définis, tandis que dans la seconde, l’affectation du trafic a
+été appliquée et des scénarios alternatifs ont été évalués. Pour la première partie, les données en libre
+accès du site des CFF ont été utilisées pour modéliser le réseau ferroviaire, en le définissant à travers
+des nœuds et des liens, et pour définir la matrice Origine-Destination via un modèle gravitaire. Dans
+la seconde partie, les algorithmes vus pendant les cours ont été appliqués pour effectuer l’affectation du
+trafic. Ce projet a été intéressant car il a permis d’appliquer les connaissances du cours à un ensemble
+de données réel ; il faut reconnaître certaines limites dues à la granularité du réseau ferroviaire et à la
+qualité des données sur la demande.
+                    <button class="read-more-btn" onclick="toggleDescription(this)">Lire la suite</button>
+                </div>
+                
+                <a href="final_report_TNMA.pdf" target="_blank" class="pdf-link">Voir le Rapport PDF</a>
             </div>
 
             <div class="project-card">
                 <div class="project-title">Développement d'un framework pour comparer les services de VTC dans un simulateur de trafic microscopique</div>
-                <div class="project-description">
-                    <p><strong>Type:</strong>Projet de Bachelor, avec Fletcher Collis (8 ECTS)</p>
-                    <p><strong>Lab:</strong> LUTS</p>
-                    <p><strong>Supervision:</strong> Prof. Nikolas Geroliminis et Dr. Gustav Nilsson </p>
-                    <p><strong>Période:</strong> BA6, Printemps 2024</p>
+                <div class="project-info">
+                    <div class="info-item"><span class="info-label">Type:</span> Projet de Bachelor, avec Fletcher Collis (8 ECTS)</div>
+                    <div class="info-item"><span class="info-label">Cours/Lab:</span> LUTS</div>
+                    <div class="info-item"><span class="info-label">Supervision:</span> Prof. Nikolas Geroliminis et Dr. Gustav Nilsson</div>
+                    <div class="info-item"><span class="info-label">Période:</span> BA6, Printemps 2024</div>
                 </div>
-                <a href="Final_report_Bachelor_project.pdf" target="_blank" class="pdf-link">📄 Voir le Rapport PDF</a>
+                
+                <div class="description">
+                    <div class="description-preview">
+                        <strong>Description:</strong> Ce projet a pour objectif de développer des algorithmes pour les services de VTC (ride-hailing)
+et d’évaluer leurs performances à l’aide d’un simulateur de trafic open-source, SUMO.
+                    <div class="description-full">
+                        <strong>Description complète:</strong> Ce projet a pour objectif de développer des algorithmes pour les services de VTC (ride-hailing)
+et d’évaluer leurs performances à l’aide d’un simulateur de trafic open-source, SUMO. Le premier
+algorithme défini repose sur le principe du premier arrivé, premier servi (FCFS), ce qui a permis de
+comprendre le fonctionnement du simulateur. Ensuite, trois autres algorithmes plus complexes ont
+été définis, basés sur la distance à parcourir et l’heure de la demande. Dans un premier temps, les
+algorithmes ont été testés sur une grille de Manhattan 5x5, puis ils ont été testés sur un modèle SUMO
+du réseau urbain d’Ingolstadt, en Allemagne. L’analyse des performances, basée sur des métriques
+comme les temps d’attente moyens et leur distribution, a mis en évidence comment l’efficacité des
+algorithmes varie significativement en fonction de la taille de la flotte et de la complexité du réseau,
+démontrant le potentiel des outils open-source pour la recherche et l’optimisation des services de
+mobilité urbaine
+                    </div>
+                    <button class="read-more-btn" onclick="toggleDescription(this)">Lire la suite</button>
+                </div>
+                
+                <a href="Final_report_Bachelor_project.pdf" target="_blank" class="pdf-link">Voir le Rapport PDF</a>
             </div>
         </div>
 
@@ -161,5 +281,20 @@
             <p>🔗 GitHub: <a href="https://github.com/liuzzi29">github.com/liuzzi29</a></p>
         </footer>
     </div>
+
+    <script>
+        function toggleDescription(button) {
+            var descriptionFull = button.previousElementSibling;
+            var descriptionPreview = descriptionFull.previousElementSibling;
+            
+            if (descriptionFull.classList.contains('show')) {
+                descriptionFull.classList.remove('show');
+                button.textContent = 'Lire la suite';
+            } else {
+                descriptionFull.classList.add('show');
+                button.textContent = 'Voir moins';
+            }
+        }
+    </script>
 </body>
 </html>
